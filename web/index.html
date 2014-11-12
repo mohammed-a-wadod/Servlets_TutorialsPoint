@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="resource/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="GetMethod" method="GET">
+            Name : <input type="text" name="Name" value="" />
+            Password : <input type="password" name="PassWord" value="" />
+            <input type="submit" value="Submit" name="Submit" class="btn btn-danger"/>
+        </form>
+        <hr/>
+        <form action="CheckBox" method="POST">
+            <input type="checkbox" name="Me" /> Me
+            <input type="checkbox" name="Here" /> Here
+            <input type="checkbox" name="There" /> There
+            <input type="submit" value="Submit" class="btn btn-danger"/>
+        </form>
+        <hr/>
+        <form action="ShowError" method="POST">
+            <input type="submit" value="Submit" class="btn btn-danger"/>
+        </form>
+        <hr/>
+        <form action="Creating_Cookies" method="POST">
+            First Name : <input type="text" name="FName" value="" />
+            Last Name : <input type="text" name="LName" value="" />
+            <input type="submit" value="Submit" class="btn btn-danger"/>
+        </form>
+        <form action="ReadCookies" method="GET">            
+            <input type="submit" value="Read Cookie" class="btn btn-danger"/>
+        </form>
+        <form action="DeleteCookies" method="GET">            
+            <input type="submit" value="Delete Cookie" class="btn btn-danger"/>
+        </form>
+    </body>
+</html>

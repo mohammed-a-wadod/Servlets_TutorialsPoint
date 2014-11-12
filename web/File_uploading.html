@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>File Uploading form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="resource/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <h3>File Upload :</h3>
+        <form action="UploadServlet" 
+              method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" size="50" 
+                   class="btn btn-inverse" />
+            <input type="submit" value="Upload File" 
+                   class="btn btn-primary"/><br/>
+        </form>
+    </body>
+</html>
