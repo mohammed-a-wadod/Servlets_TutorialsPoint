@@ -1,3 +1,10 @@
+/*
+Creating filter on one servler, group of servlers or all of my servlets
+I make filters for the following issues :
+    To intercept requests from a client before they access a resource at back end.
+    To manipulate responses from server before they are sent back to the client.
+it's life cycle is similar to servlet life cycle, and we must add it to web.xml
+ */
 package Filter;
 
 import java.io.IOException;
@@ -21,8 +28,8 @@ public class LogFilter implements Filter {
     }
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) 
-            throws IOException, ServletException {        
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+            throws IOException, ServletException {
         String ipAddress = request.getRemoteAddr();
         System.out.println("IP : " + ipAddress + " ,Time : " + new Date().toString());
     }
