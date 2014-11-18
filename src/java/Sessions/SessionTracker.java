@@ -1,8 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+*/
 package Sessions;
 
 import java.io.*;
@@ -59,11 +57,11 @@ public class SessionTracker extends HttpServlet {
                 + "</tr>\n"
                 + "<tr>\n"
                 + "<td>Creation time</td>"
-                + "<td>" + session.getCreationTime() + "</td>"
+                + "<td>" + createTime + "</td>"
                 + "</tr>\n"
                 + "<tr>\n"
                 + "<td>Time of last access</td>"
-                + "<td>" + session.getLastAccessedTime() + "</td>"
+                + "<td>" + lastAccessTime + "</td>"
                 + "</tr>\n"
                 + "<tr>\n"
                 + "<td>ID</td>"
