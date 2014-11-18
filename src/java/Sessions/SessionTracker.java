@@ -28,6 +28,8 @@ public class SessionTracker extends HttpServlet {
         //check if this is new comer on your web page 
         if (session.isNew()) {
             title = "welcoem to my website";
+            
+            //set key and value like Cookie(key, value)
             session.setAttribute(userIDKey, userID);
         } else {
             visitCount = (Integer) session.getAttribute(VistCountKey);
